@@ -1,0 +1,38 @@
+{
+  "capex": {
+    "Data platform, ingestion & integration": 18.0,
+    "IoT/BMS telemetry retrofit (packs, chargers, meters)": 22.0,
+    "EMS/SCADA integration & charger firmware (module staging)": 10.0,
+    "ML + optimisation development": 12.0,
+    "Trading desk set-up, change management, training": 5.0,
+    "Contingency (15 %)": 10.049999999999999
+  },
+  "capex_total": 77.05,
+  "run_cost": {
+    "Cloud compute & storage": 6.0,
+    "Software licences (solver, MLOps, weather feeds)": 3.5,
+    "Data science / OR / trading team (30 FTE)": 10.5,
+    "Annual maintenance of IoT & integrations": 4.5
+  },
+  "run_total": 24.5,
+  "annual_ebitda_uplift": 369.1629301979406,
+  "ramp": [
+    0.3,
+    0.7,
+    1,
+    1,
+    1
+  ],
+  "wacc": 0.12,
+  "cashflows": [
+    -77.05,
+    110.74887905938219,
+    258.4140511385584,
+    369.1629301979406,
+    369.1629301979406,
+    369.1629301979406
+  ],
+  "npv_5yr": 934.6845858599955,
+  "payback_years": 0.6957181025614421,
+  "roi_5yr": 18.164850367187054
+}

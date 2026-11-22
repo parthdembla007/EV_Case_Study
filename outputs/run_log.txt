@@ -1,0 +1,84 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+runs 212 time 619 s
+             reliability    loss    revenue    ebitda  margin  min_margin
+A_rule            0.7870  0.1007  2813.7462  418.0387  0.1486      0.0659
+L1_dispatch       0.8169  0.0836  2934.8063  523.8811  0.1785      0.0945
+L2_network        0.8961  0.0823  3178.4562  654.6012  0.2059      0.1379
+L3_procure        0.8961  0.0831  3178.1636  763.3564  0.2402      0.1628
+L4_forecast       0.8965  0.0829  3179.9214  764.9073  0.2405      0.1630
+L5_REpool         0.8964  0.0830  3179.6663  771.1469  0.2425      0.1678
+B_full            0.8976  0.0831  3194.0831  787.2016  0.2465      0.1751
+            revenue  energy_cost  degradation  vom_logistics  storage_value  fixed_opex  tech_run   ebitda  margin  reliability  loss_pct
+cluster                                                                                                                                  
+Delhi NCR   832.341      332.144       59.574         19.496         -4.545      248.64       0.0  167.943   0.202        0.740     0.100
+Mumbai MMR  651.560      297.636       33.279         15.510         -3.030      259.20       0.0   42.906   0.066        0.780     0.103
+Bengaluru   588.707      239.127       42.104         13.554         -2.254      182.40       0.0  109.268   0.186        0.794     0.100
+Hyderabad   397.624      175.973       24.089         10.047         -1.824      133.20       0.0   52.491   0.132        0.860     0.101
+Chennai     343.513      148.362       20.813          9.061         -1.287      118.56       0.0   45.430   0.132        0.823     0.100
+            revenue  energy_cost  degradation  vom_logistics  storage_value  fixed_opex  tech_run   ebitda  margin  reliability  loss_pct
+cluster                                                                                                                                  
+Delhi NCR   949.913      325.803       66.380         29.720         -2.201      248.64     6.860  270.310   0.285        0.852     0.083
+Mumbai MMR  755.582      295.173       36.610         25.036         -1.367      259.20     5.880  132.316   0.175        0.911     0.082
+Bengaluru   674.242      226.955       47.302         20.486         -0.569      182.40     4.900  191.629   0.284        0.915     0.084
+Hyderabad   440.289      160.527       26.308         13.910         -0.374      133.20     3.675  102.294   0.232        0.953     0.083
+Chennai     374.058      126.901       22.501         12.059         -0.198      118.56     3.185   90.653   0.242        0.899     0.082
+                     case  config   revenue   ebitda  margin  min_cluster_margin min_cluster  reliability   loss
+0                    Base  A_rule  2813.696  417.704   0.148               0.076  Mumbai MMR        0.787  0.101
+1                    Base  B_full  3202.228  791.122   0.247               0.184  Mumbai MMR        0.899  0.083
+2                IEX +10%  A_rule  2813.696  390.553   0.139               0.066  Mumbai MMR        0.787  0.101
+3                IEX +10%  B_full  3198.553  772.763   0.242               0.177  Mumbai MMR        0.899  0.083
+4                IEX +20%  A_rule  2813.696  367.576   0.131               0.059  Mumbai MMR        0.787  0.101
+5                IEX +20%  B_full  3196.329  757.387   0.237               0.173  Mumbai MMR        0.899  0.083
+6                IEX +30%  A_rule  2813.696  347.087   0.123               0.052  Mumbai MMR        0.787  0.101
+7                IEX +30%  B_full  3194.449  746.779   0.234               0.170  Mumbai MMR        0.899  0.083
+8                 RE -10%  A_rule  2813.696  427.818   0.152               0.078  Mumbai MMR        0.787  0.101
+9                 RE -10%  B_full  3202.631  786.382   0.246               0.182  Mumbai MMR        0.899  0.083
+10            Demand +15%  A_rule  3041.143  560.832   0.184               0.112  Mumbai MMR        0.738  0.098
+11            Demand +15%  B_full  3442.777  910.112   0.264               0.209  Mumbai MMR        0.845  0.082
+12  Degradation cost +50%  A_rule  2813.696  327.842   0.117               0.050  Mumbai MMR        0.787  0.101
+13  Degradation cost +50%  B_full  3204.210  694.446   0.217               0.160  Mumbai MMR        0.899  0.083
+14      Elasticity halved  A_rule  2813.696  417.704   0.148               0.076  Mumbai MMR        0.787  0.101
+15      Elasticity halved  B_full  3202.702  790.750   0.247               0.185  Mumbai MMR        0.899  0.083
+16    Forecast error +70%  A_rule  2813.696  417.704   0.148               0.076  Mumbai MMR        0.787  0.101
+17    Forecast error +70%  B_full  3201.282  789.397   0.247               0.182  Mumbai MMR        0.899  0.083
+                                      min           max
+max_balance_err_MWh          1.776357e-15  1.918465e-13
+max_import_over_limit_MW    -4.360213e-01  1.190159e-13
+min_soc_margin_MWh          -1.999872e-03  8.122830e-02
+max_soc_over_MWh            -6.008000e+00  1.421085e-14
+min_pack_reserve_margin_MWh  1.415353e+00  3.666502e+00
+simultaneous_ch_dis_hours    0.000000e+00  0.000000e+00
+max_dc_over_cap_MWh          1.776357e-15  1.421085e-14
+max_retail_price_dev         0.000000e+00  1.937059e-01
+max_daily_cycles             6.517030e-01  1.068067e+00
+{
+ "capex_total": 77.05,
+ "run_total": 24.5,
+ "annual_ebitda_uplift": 369.1629301979406,
+ "ramp": [
+  0.3,
+  0.7,
+  1,
+  1,
+  1
+ ],
+ "wacc": 0.12,
+ "cashflows": [
+  -77.05,
+  110.74887905938219,
+  258.4140511385584,
+  369.1629301979406,
+  369.1629301979406,
+  369.1629301979406
+ ],
+ "npv_5yr": 934.6845858599955,
+ "payback_years": 0.6957181025614421,
+ "roi_5yr": 18.164850367187054
+}
